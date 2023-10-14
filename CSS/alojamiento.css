@@ -1,0 +1,149 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: #76b852;
+    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);
+    background: linear-gradient(to right, #8DC26F, #76b852);    
+}*/
+
+body {
+	background: linear-gradient(-45deg, #59813E, #76b852, #59813E);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.row{
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para los formularios */
+
+[id^="eventoContainer"] {
+    padding: 15px;
+    margin: 2%;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+[id^="eventoContainer"]:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Estilos para botones */
+
+.buttons{
+    text-align: center;
+}
+
+.buttons-addres{
+    margin-bottom: 5px;
+}
+
+.buttons-controller{
+    margin-bottom: 5px;
+}
+
+.btn-success:hover{
+    box-shadow: 0px 0px 5px #157347;
+}
+
+.btn-primary:hover{
+    box-shadow: 0px 0px 5px #0B5ED7;
+}
+
+.btn-danger:hover{
+    box-shadow: 0px 0px 5px #BB2D3B;
+}
+
+
+/* Estilos para el conteiner A4 */
+.a4container {
+    width: 210mm;
+    height: max-content;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+[class^="pagina"]{
+    height: 295mm;
+    width: 210mm;
+}
+
+.a4container:hover {
+    box-shadow: 0px 0px 5px black;
+    border: 5px;
+}
+
+.a4container img {
+    width: 210mm;
+}
+
+[class^="pagina"] {
+    position: relative;
+    height: 295mm; /* Ajusta la altura según tus necesidades */
+    width: 210mm;
+}
+
+.piepagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Estilos unicos para la tabla contenedor */
+
+.entablar {
+    width: 97%;
+    margin: 2%;
+}
+
+.entablar [class^="label"] {
+    background-color: #F2F2F2;
+}
+
+.ssalida {
+    width: 165px;
+}
+
+.hlugar {
+    text-align: right;
+}
+
+.labelhuesped {
+    width: 195px;
+}
+
+.labelalimentacion {
+    width: 155px;
+}
+
+.container-head {
+    background-color: #538135;
+    color: white;
+}
+
+.container-fut {
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+table, td,tr:not(.container-head) th, tr:not(.container-head) td {
+    border: 1px solid black;
+    /* Agrega un borde negro de 1 píxel */
+}

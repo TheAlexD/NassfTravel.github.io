@@ -1,0 +1,109 @@
+<doctype html>
+  <html>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+      .bg-custom-color {
+          background-color: #567235;
+      }
+  </style>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Regresar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body class="bg-custom-color">
+    <div class="container">
+      <div class="row ">
+        <div class="m-0 row justify-content-center mb-3 ">
+          <div class="col-sm-4 border mb-3  ">
+            <div class="row ">
+              <h1 class="text-center text-light">DATOS DE COMPRADOR</h1>
+              <div class="col vh-40  border">
+                <div class="col-sm-5 mb-3">
+                  <label class="text-light">Persona</label>
+                  <input type="text" class="form-control" id="seniores" placeholder="Nombre" value=""
+                    required style="width : 200%">
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label class="text-light">Genero</label>
+                  <select id="Cbox" name="Cbox" style="width : 200%" class="form-control">
+                    <option id="Femenino" value="Mujer">Femenino</option>
+                    <option id="Masculino" value="Hombre">Masculino</option>
+                  </select>
+                </div>
+                <div class="col-sm-5 mb-3">
+                  <label class="text-light">Fee de emision</label>
+                  <input type="number" class="form-control" id="fee" placeholder="USD" value=""
+                    required style="width : 200%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+          <div class="form-row border mb-3">
+            <h1 class="text-center text-light">BOLETOS AEREOS</h1>
+            <div class="row vh-40 justify-content-around align-items-start border mb-3 " id="Boletos">
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!--<button class="btn btn-danger" type="submit" >eliminar</button> //-->
+        <div class="row vh-40 justify-content-around align-items-center">
+          <div class="col-sm-2">
+            <button class="btn btn-primary -md-4 mb-3" type="submit" id="agregar">Round-Trip ticket</button>
+          </div>
+
+
+          <div class="col-sm-2">
+            <button class="btn btn-primary -md-4 mb-3" type="submit" id="agregar2">One Way ticket</button>
+          </div>
+        </div>
+        <a class="text-center">
+          <button class="btn btn-primary" id="guardar" type="submit">Guardar y siguiente</button>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+
+  <script src="../scripts/dom.js"></script>
+  <script src="../scripts/codigo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
+    integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+  </html>
+</doctype>
